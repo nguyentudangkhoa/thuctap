@@ -1,0 +1,337 @@
+*{
+    padding: 0;
+    margin:0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+.header-top{
+    background-color: #02eefc;
+}
+
+.header-top nav{
+    height: 60px;
+    width: 100%;
+}
+.header-top nav ul li{
+    padding-left: 15px;
+    padding-right: 15px;
+    display:  inline-block;
+    color:#003b50;
+    text-transform: uppercase;
+}
+.header-top nav ul{
+    float:right;
+    margin-top: 10px;
+}
+.header-top nav ul li a{
+    color: #003b50;
+    text-decoration: none;
+}
+.navbar-search{
+    height: 40px;
+    width: 720px;
+    border-radius: 15px;
+    border: 0px;
+    padding: 15px;
+}
+.navbar-search:focus{
+    outline: none;
+}
+a.active, a:hover{
+    color:#02eefc;
+}
+.header-top .check-Btn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+    margin-top:10px
+}
+.header-top #check{
+    display: none;
+}
+
+.btn-search{
+    border: 0px;
+    border-radius: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 123px;
+    height: 40px;
+    color: #02eefc;
+    background: #013750;
+}
+.btn-search:focus{
+    outline: none;
+}
+
+
+/*Menu bottom*/
+.header-bottom{
+    background: #04638f;
+    padding-top: 15px;
+}
+
+.header-bottom nav{
+    height: 37px;
+    width: 100%;
+}
+.header-bottom nav ul li{
+    padding-left: 15px;
+    padding-right: 15px;
+    display:  inline-block;
+    color:whitesmoke;
+    text-transform: uppercase;
+}
+.header-bottom nav ul li a{
+    color: whitesmoke;
+    text-decoration: none;
+}
+.header-bottom nav ul{
+    text-align: center;
+}
+
+
+/*menu info*/
+.menu-info{
+    background: #e1e1e1;
+    height: 37px;
+    padding-top:5px ;
+}
+
+.menu-info nav ul li{
+    display:  inline-block;
+}
+
+.menu-info ul li a{
+    text-decoration: none;
+    margin-left: 15px;
+    margin-top:10px ;
+}
+.menu-info .item{
+    color: red;
+}
+.menu-info .item-main{
+    color: rgb(4, 1, 26);
+}
+
+/*Content*/
+.content{
+    padding-top:15px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+    /*Content top*/
+        /*Content top left*/
+.content-top-left{
+    margin-left: 10px;
+    border-radius: 4px;
+    height: 500px;
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.2);
+    width: 330px;
+}
+.content-top-left .title label{
+    background:  #04638f;
+    width: 100%;
+    text-transform: uppercase;
+    color: whitesmoke;
+    border-radius: 4px 4px 0 0;
+    padding-left: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.content-top-left .title ul{
+    margin-left: 20px;
+}
+.content-top-left .title ul li{
+    margin-top: 10px;
+}
+.content-top-left .title ul li a{
+    text-decoration: none;
+    color: black;
+}
+.content-top-left .title ul li a:hover{
+    color: #02eefc;
+}
+        /*Content top right*/
+.content-top-right{
+    height:500px;
+}
+.content-top-right .title label{
+    font-size:20px; font-weight: bold; color: gray;
+}
+.content-top-right .status .btn-like{
+    border:0px;
+    border-radius:3px;
+    padding: 5px;
+    
+}
+.content-top-right .status .btn-like .fa-heart{
+    color: red;
+}
+.content-top-right .status  .fa-google-plus-g{
+    background-color: gray;
+    height: 23px;
+    width: 23px;
+    padding: 3px;
+    text-align: center;
+    border-radius: 50%;
+    color: white;
+}
+.content-top-right .status  .fa-facebook-f{
+    background-color: gray;
+    height: 23px;
+    width: 23px;
+    padding: 3px;
+    text-align: center;
+    border-radius: 50%;
+    color: white;
+    margin-left: 10px;
+}
+
+.content-top-right .content-main{
+    background-color: #04638f;
+    margin-top: 20px;
+
+}
+.content-top-right .content-main  nav ul{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #04638f;;   
+}
+
+.content-top-right .content-main  nav ul li{
+    text-transform: uppercase;
+    border: 1;
+    margin-left: 115px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: inline-block;
+    border-right: 1px solid #e1e1e1;
+}
+
+.content-top-right .content-main  nav ul .li{
+    border-right: none;
+}
+
+.content-top-right .content-main  nav ul li:hover{
+    background: #013750;
+}
+.content-top-right .content-main  nav ul li a{
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 5px 5px;
+    text-decoration: none;
+}
+
+.section-change{
+    margin-top: 10px;
+    color: #003b50;
+    text-transform: uppercase;
+}
+.border-section{
+    border-bottom: 3px solid;
+    width: 200px;
+    color: gray;
+}
+/*Reponsive*/
+@media (max-width: 1480px){
+    .navbar-search{
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 952px){
+    .logo-header{
+        width: 30px;
+        padding-left: 50px;
+    }
+    
+    .header-top nav ul li{
+        font-size: 16px;
+    }
+    .navbar-search{
+        width: 10%;
+    }
+
+}
+
+
+@media (max-width: 858px){
+    .header-top .check-Btn{
+        display: block;
+    }
+
+    .header-top nav ul{
+        position: fixed;
+        width:100%;
+        height:100vh;
+        background: #2c3e50;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    .header-top nav ul li{
+        display: block;
+        color:white;
+        margin:20px 0;
+        line-height: 30px;
+    }
+    .header-top nav ul li a{
+        color:white
+    }
+    #check:checked ~ .menu{
+        left: 0;
+    }
+    .header-bottom nav ul{
+        width:100%;
+        height:600%;
+        text-align: center;
+        background-color:  #04638f;
+    }
+    .header-bottom nav ul li{
+        display: block;
+        text-align: center;
+        margin-top: 10px;
+    }
+    .menu-info{
+        margin-top: 150px;
+        height: 60px;
+    }
+    .navbar-search{
+        width: 100%;
+    }
+    .section-change{
+        margin-top: 250px;
+    }
+    .header-bottom nav ul li{
+        margin-top: 5px;
+        border-bottom: 1px solid #e1e1e1;
+    }
+    .header-bottom nav ul .li-last{
+        border-bottom: 0;
+    }
+
+
+    .content-top-right .content-main  nav ul li{
+        text-transform: uppercase;
+        border: 1;
+        margin-left: 115px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        display: inline-block;
+        border-bottom: 1px solid #e1e1e1;
+        border-right: none;
+    }
+    
+    .content-top-right .content-main  nav ul .li{
+        border-bottom: 0;
+    }
+}
