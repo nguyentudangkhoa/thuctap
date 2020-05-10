@@ -6,13 +6,31 @@
     box-sizing: border-box;
 }
 
+.header-top .dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    right: 0;
+    font-size: 13px;
+    text-transform: none;
+}
+.li-shape2:hover .dropdown-content{
+    display: block;
+}
+
 .header-top{
     background-color: #02eefc;
 }
 
+
 .header-top nav{
     height: 60px;
     width: 100%;
+}
+.header-top .bottom-border{
+    display: none;
 }
 .header-top nav ul li{
     padding-left: 15px;
@@ -63,11 +81,14 @@
 .header-top .check-Btn{
     font-size: 30px;
     color: white;
-    float: right;
-    margin-right: 40px;
+    float: left;
+    margin-left: 10px;
     cursor: pointer;
     display: none;
     margin-top:10px
+}
+div{
+    cursor: pointer;
 }
 .header-top #check{
     display: none;
@@ -91,7 +112,8 @@
 /*Menu bottom*/
 .header-bottom{
     background: #04638f;
-    padding-top: 15px;
+    height: 40px;
+    padding-top: 7px;
 }
 .header-bottom a:hover{
     color: #02eefc;
@@ -366,6 +388,7 @@
 }
 .footer .about{
     margin-top: 36px;
+    margin-bottom: 36px;
 }
 .footer .about-item{
     margin-top: 22px;
@@ -442,6 +465,9 @@
     margin-top: 36px;
     color: whitesmoke;
 }
+.footer .bottom-border{
+    display: none;
+}
 /*Reponsive*/
 @media (max-width: 1480px){
     .navbar-search{
@@ -472,9 +498,10 @@
     }
 
     .header-top nav ul{
-        position: fixed;
-        width:100%;
-        height:100vh;
+        margin-top: -1px;
+        position: absolute;
+        width:50%;
+        height:70%;
         background: #2c3e50;
         left: -100%;
         text-align: center;
@@ -491,6 +518,9 @@
     }
     #check:checked ~ .menu{
         left: 0;
+    }
+    div:checked ~ .menu{
+        left: -100%;
     }
     .header-bottom nav ul{
         width:100%;
@@ -598,5 +628,29 @@
     }
     .border-section{
         width: 100%;
+    }
+    
+    .footer .bottom-border{
+        display: block;
+        text-align: center;
+    }
+    .footer .bottom-border label{
+        border: 1px solid;
+        width: 70%;
+        color: rgba(0, 0, 0, 0.315);
+        border-radius: 10px;
+    }
+    .header-top .bottom-border{
+        display: block;
+        text-align: center;
+    }
+    .header-top .bottom-border label{
+        border: 1px solid;
+        width: 30%;
+        color: rgba(0, 0, 0, 0.315);
+        border-radius: 10px;
+    }
+    .dropdown-content .dropdown-item a{
+        color: #003b50;
     }
 }
